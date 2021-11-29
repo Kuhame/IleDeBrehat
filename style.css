@@ -1,0 +1,241 @@
+/* NavBar */
+li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    color: white;
+}
+
+body{
+    font-family: "Cabin", Sans-serif;;
+}
+
+.articles a{
+    color: #132244;
+}
+
+.articles a:hover{
+    color: #df193a;
+}
+
+.bg-bleu-fonce{
+    background: #06163a;
+}
+.dropdown-menu {
+    background-color: #06163a;
+    border:none;
+}
+
+.dropdown-item {
+    color: #fff;
+}
+
+.dropdown-item:hover {
+    background-color: #202b5d;
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-footer{
+    border:none;
+    padding-top: 0;
+}
+
+.modal-title{
+    color:#132244;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.modal-body h1,.modal-body h2,.modal-body h3,.modal-body h4,.modal-body h5{
+    color:#132244;
+}
+
+.banner{
+    background: linear-gradient( rgba(0, 0,0,0.5), rgba(0, 0,0,0.5)), url(images/brehat.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 1000px;
+}
+
+#boutton-haut{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 40px;
+    background-color: #06163a;
+    color: white;
+    border-style: none;
+    z-index: 7;
+}
+
+#boutton-haut:hover{
+    background-color: #df193a;
+}
+
+
+#newsletter .modal-header{
+    border: none;
+}
+#newsletter .modal-content{
+    background-color: #edf2f7;
+}
+#newsletter .modal-body{
+    background-color: white;
+}
+
+#newsletter .modal-footer{
+    border: none;
+}
+
+#newsletter p, #newsletter label{
+    color:#202B5D;
+}
+
+
+#newsletter .btn{
+    background-color: #202B5D;
+    border:none;
+}
+
+#newsletter .form-check-input:checked{
+    background-color: #202B5D;
+    border-color: #202B5D;
+}
+
+.btn:focus,
+.btn:active:focus{
+    box-shadow: none; 
+}
+
+.lb-sm{
+    font-size: 12px;
+    text-align: left;
+    color: #8390A4 !important;
+}
+
+.meteo{
+    background-color: #202B5D ;
+}
+
+.activite h1{
+    color:#132244;
+}
+
+.card-footer p{
+    color:#4e555a;
+}
+
+.activite p{
+    color:#202B5D;
+}
+
+.btn-info-plus{
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    border-width: 2px 2px 2px 2px;
+    border-radius: 0px 0px 0px 0px;
+    height: 60px;
+    border: solid;
+    background-color:#06163a ;
+    color: white;
+    line-height: 42px;
+}
+
+.btn-info-plus:hover{
+    background-color:#df193a ;
+    color: white;
+    transition: 0.25s;
+}
+
+.btn-decouvrir{
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    border-width: 2px 2px 2px 2px;
+    border-radius: 0px 0px 0px 0px;
+    height: 50px;
+    border: solid;
+    border-color: #0067DA;;
+    color: #0067DA;
+    line-height: 32px;
+}
+
+.btn-decouvrir:hover{
+    background-color:#df193a ;
+    border-color:#df193a;
+    color: white;
+    transition: 0.25s;
+}
+
+.btn-banner{
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    border-width: 2px 2px 2px 2px;
+    height: 43px;
+    background-color: #0067DA;
+    color: white;
+}
+
+.btn-banner:hover{
+    background-color:#df193a;
+    color: white;
+    transition: 0.25s;
+}
+
+.titre{
+    padding-left: 0px;
+}
+
+.titre h1{
+    color:#202b5d;
+}
+
+.titre p{
+    font-size: 18px;
+    line-height: 26px;
+    color: #62718d;
+}
+
+.card-img-top{
+    height: 25rem;
+}
+
+.articleCitation{
+    background-color: #edf2f7;
+}
+
+.articleCitation p{
+    display: table-cell; 
+    vertical-align: middle;
+}
+.carousel-item{
+    height: 400px;
+}
+
+.carousel-item img{
+    height: 100%;
+}
+
+footer{
+    position: absolute;
+    background-color:#132244 ;
+    width: 100%;
+    text-underline-offset: 1px;
+}
+footer p{
+    color:#8c96ac;
+}
+
+
+.copyright{
+    background-color: #06163a;
+}
+
+.btn-outline-info{
+    color:#000;
+}
+
+ /*-------------------- Test background: #243c4f; -------------------------*/

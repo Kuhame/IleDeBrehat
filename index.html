@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Style.css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
+    <!-- Iconne boutton haut -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        content="Toute l’information pratique sur l’administration de la commune, les démarches administratives, les services, la vie quotidienne insulaire, les loisirs et le tourisme."
+        name="description">
+
+    <title>Commune d'île-de-Bréhat, site officiel - ÎLE-DE-BRÉHAT</title>
+</head>
+
+<body>
+    <!-- Titre du site -->
+    <!-- To do :    1. Rajouter les animations (de gauche a droite sur le surlignagne),
+                    2. Faire de la responsive,
+                    3. Rendre barre transparent au début puis bleu
+                -->
+
+    <!--NavBar-->
+    <nav class="navbar navbar-dark navbar-expand-lg sticky-top bg-bleu-fonce">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo-navBar.webp" width="230" height="24" class="d-inline-block align-top"
+                    alt="Blason de l'Ile de Bréhat">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-label="boutton-a-bascule" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end bg-bleu-fonce" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/logo-navBar.webp" width="230" height="24" class="d-inline-block align-top"
+                            alt="Blason de l'Ile de Bréhat">
+                    </a>
+                    <button type="button" class="btn-close text-reset bg-light" data-bs-dismiss="offcanvas"
+                        aria-label="Fermer"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">ACCUEIL</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle" href="#" id="municipaliteDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">MUNICIPALITE</a>
+                            <ul class="dropdown-menu" aria-labelledby="municipaliteDropdown">
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/municipalite/lequipe-municipale/">Equipe municipal</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/municipalite/la-mairie/">Mairie</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/municipalite/les-commissions/">Commissions</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/municipalite/conseils-municipaux-brehat/">Conseils municipaux</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/municipalite/tarifs-communaux/">Tarifs communaux</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/municipalite/jumelage-brehat-itterswiller/">Jumelage Itterswiller</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/municipalite/conseil-municipal-des-jeunes/">Conseils municipaux des jeunes</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/municipalite/budget-et-fiscalite/">Budget et fiscalité</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle" href="#" id="serviceMuniDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">SERVICES MUNICIPAUX</a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceMuniDropdown">
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/services/formalites-administratives/">Formalités administratives</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/services/gestion-des-dechets-2/">Gestion des déchets</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/services/services-techniques/">Services</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/services/formalites-administratives/ecole-cantine-garderie/">Ecole</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/services/pompiers-brehat/">Pompiers</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/services/brehat-infos/">Bréhat Infos</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/services/enquetes-publiques/">Enquêtes publiques</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/services/formalites-administratives/ports-et-mouillages/">Ports et mouillages</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/services/location-de-salle/">Location de salle</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/services/assainissement/">Gestion de l'eau</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle" href="#" id="activiteDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">ACTIVITÉS ET DÉCOUVERTE</a>
+                            <ul class="dropdown-menu w-100" aria-labelledby="activiteDropdown">
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/que-faire-a-brehat/culture/">Activités culturelles</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/que-faire-a-brehat/activites-sportives/">Activités sportives</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/que-faire-a-brehat/activites-sportives/">Patrimoine</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/que-faire-a-brehat/camping-municipal/">Camping municipal</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/lagenda/">Agenda</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/que-faire-a-brehat/office-du-tourisme/">Office du tourisme</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/que-faire-a-brehat/geographie-histoire/">Histoire</a></li>
+                                <li><a class="dropdown-item" href="https://www.iledebrehat.fr/que-faire-a-brehat/demographie/">Démographie</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#newsletter" data-bs-toggle="modal">NEWSLETTER</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="newsletter" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <form>
+                    <div class="container">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <p>Inscrivez-vous à notre newsletter pour suivre nos actualités.</p>
+                                <input type="email" class="form-control" id="emailNewsletter" placeholder="EMAIL"
+                                    required>
+                                <label class="lb-sm pt-2 pb-2">Veuillez renseigner votre adresse email pour vous
+                                    inscrire.</br> Ex. : abc@xyz.com</label>
+                                <div class="form-check">
+                                    <input class="form-check-input shadow-none" type="checkbox" value=""
+                                        id="flexCheckChecked" checked required>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        J'accepte de recevoir vos e-mails et confirme avoir pris connaissance de votre
+                                        <a href="#">politique de confidentialité et mentions légales</a>.*
+                                    </label>
+                                </div>
+                                <label class="lb-sm pt-2 pb-2">Vous pouvez vous désinscrire à tout moment en cliquant
+                                    sur le lien présent dans nos emails.</label>
+                                <button type="submit" class="btn btn-primary btn-sm">S'inscrire</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bannière du site -->
+    <div class="banner d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 text-center text-white">
+                    <h1>Ile de Bréhat</h1>
+                    <p>Bienvenue sur le site officiel de la commune d'Ile de Bréhat</p>
+                    <p>
+                        <a href="#activite" class="btn btn-banner" role="button">Découvrir</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Section acticles-->
+    <div class="pb-3 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="jumbotron jumbotron-fluid py-3">
+                        <div class="container titre">
+                            <h1 class="display-4">ACTUALITES</h1>
+                            <p class="lead">Les actualités de l'ile.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-md-end align-items-center ">
+                    <a href="https://www.iledebrehat.fr/actualites/" class="btn btn-info-plus" role="button">Voir toutes les actualités</a>
+                </div>
+            </div>
+        </div>
+        <!--Pour col-3, d-flex align-items-stretch -->
+        <div class="articles container">
+            <div class="row">
+                <div class="col-lg-6 py-5">
+                    <div class="card text-center">
+                        <a href="#articleFestival" data-bs-toggle="modal"><img src="images/festival.webp"
+                                class="card-img-top img-fluid" alt="Photo du festival Les Scènes de Bréhat"></a>
+                        <div class="card-body">
+                            <a href="#articleFestival" data-bs-toggle="modal">
+                                <h4 class="card-title">Festival Les Scènes de Bréhat</h5>
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                            <p class="card-text"><small>Publié il y a 5 mins</small></p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="articleFestival" tabindex="-1" aria-labelledby="articleFestivalTitre"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title" id="articleFestivalTitre">Festival Les Scènes de Bréhat</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Fermer"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Ravie d’avoir permis la réalisation du premier festival Les Scènes de Bréhat, la
+                                        mairie de Bréhat félicite l’organisation et les artistes pour la bonne tenue et
+                                        la qualité du festival. Merci également aux nombreux bénévoles bréhatins qui ont
+                                        contribué à ce franc succès. Nul doute que Les Scènes de Bréhat ont fait une
+                                        entrée fracassante dans le paysage culturel local.</br>
+                                        A l’année prochaine pour la deuxième édition !
+                                    </p>
+                                    <img src="images/festival1.webp" class="img-fluid pb-3"
+                                        alt="Photo des membres de l'équipe du festival Les Scènes de Bréhat">
+                                    <img src="images/festival2.webp" class="img-fluid pb-3"
+                                        alt="Photo du concert Les Scènes de Bréhat depuis les gradins">
+                                    <img src="images/festival3.webp" class="img-fluid pb-3"
+                                        alt="Photo des coulisses du festival Les Scènes de Bréhat">
+                                    <img src="images/festival.webp" class="img-fluid pb-3"
+                                        alt="Photo du festival Les Scènes de Bréhat de nuit">
+                                    <img src="images/festival4.webp" class="img-fluid pb-3"
+                                        alt="Photo du public attendant le début du festival">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 py-5">
+                    <div class="card text-center">
+                        <a href="#articleFrelon" data-bs-toggle="modal"><img src="images/frelon.webp"
+                                class="card-img-top img-fluid" alt="Photo d'un frelon"></a>
+                        <div class="card-body">
+                            <a href="#articleFrelon" data-bs-toggle="modal">
+                                <h4 class="card-title">Lutte contre le frelon asiatique</h5>
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                            <p class="card-text"><small>Publié il y a 30 mins</small></p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="articleFrelon" tabindex="-1" aria-labelledby="articleFrelonTitre"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title" id="articleFrelonTitre">Lutte contre le frelon asiatique
+                                    </h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Fermer"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Le cycle de vie du frelon asiatique</h3>
+                                    <img src="images/frelon1.webp" class="img-fluid rounded mx-auto d-block pb-2"
+                                        alt="Photo du cycle de vie du frelon asiatique">
+                                    <h5 class="pb-3">Spécificités Bréhatines</h5>
+                                    <p>En 2020, 20 nids ont été détruits.</p>
+                                    <p>40 % des nids répertoriés se situaient entre 0 et 5 mètres de hauteur ( arbres,
+                                        talus, habitations, murs…). Cette hauteur d’implantation représente un réel
+                                        danger pour l’homme.</p>
+                                    <p>Selon l’entreprise Néature, spécialisée dans la lutte contre cette espèce
+                                        invasive, la progression du frelon asiatique est beaucoup moins forte que sur le
+                                        continent.</p>
+                                    <div class="container articleCitation pt-1 pb-2 mb-2">
+                                        <p>La poursuite du piégeage des reines fondatrices et l’effort fait pour le
+                                            repérage des nids depuis plusieurs années porte donc ses fruits.</p>
+                                    </div>
+                                    <p>Un nid non détruit l’année dernière a été repéré près de la chapelle Saint
+                                        Michel. Cet endroit constitue donc un potentiel « spot » à reines fondatrices.
+                                        Des pièges ont été posés et deux reines ont été capturées, un nid primaire a
+                                        également été repéré et détruit.</p>
+                                    <p>C’est en agissant de manière collective que nous serons les plus efficaces afin
+                                        de réduire la progression du frelon asiatique sur l’île. Et c’est en
+                                        centralisant le plus possible les informations vers la mairie que nous pourrons
+                                        étudier l’évolution de cette espèce sur l’île.</p>
+                                    <p>Au delà du printemps avec le piégeage des reines, il convient également de
+                                        prévenir la mairie à chaque découverte de nid primaire ou secondaire. Celle-ci
+                                        se chargera de détruire le nid ou de faire appel à l’entreprise Néature. Les
+                                        frais d’intervention et de destruction sont entièrement pris en charge par la
+                                        Mairie.</p>
+                                    <p>Merci à tous pour votre mobilisation.</p>
+                                    <p>La commission environnement.</p>
+                                    <h5 class="pb-3">Exemple de Fiche de suivi 2021 frelons asiatiques (à faire remonter
+                                        à la mairie) :</h5>
+                                    <p>Captures des reines jusqu’au 22 mai 2021 ( échéance 2021 “tardive” due aux
+                                        conditions météorologiques).</p>
+                                    <img src="images/frelon2.webp" class="img-fluid pb-2"
+                                        alt="Photo d'un piège pour femelle fondatrice de frelon asiatique">
+                                    <p>Composition du piège : 1/3 bière brune, 1/3 sirop cassis, 1/3 vin blanc</p>
+                                    <p>Annoter la date de pose, puis tous les 15 jours renouveler le piège et annotez
+                                        les différentes espèces piégées.</p>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col ">Lieu de pose</th>
+                                                    <th scope="col">1er renouvellement</th>
+                                                    <th scope="col">2è renouvellement</th>
+                                                    <th scope="col">3è renouvellement</th>
+                                                    <th scope="col">4è renouvellement</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Date</th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Nombre reines piégées</th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Autres insectes espèce et nombre</th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-none d-lg-block h-100 py-5">
+                    <div class="card text-center">
+                        <a href="#articleCompostage" data-bs-toggle="modal"><img src="images/compostage.webp"
+                                class="card-img-top img-fluid" alt="Photo d'un compost"></a>
+                        <div class="card-body">
+                            <a href="#articleCompostage" data-bs-toggle="modal">
+                                <h4 class="card-title">Enquête : que deviennent vos biodéchets ?</h5>
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                            <p class="card-text"><small>Publié il y a 1 heure</small></p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="articleCompostage" tabindex="-1"
+                        aria-labelledby="articleCompostageTitre" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title" id="articleCompostageTitre">Enquête : que deviennent vos
+                                        biodéchets ?</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Fermer"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Nos déchets de cuisine sont aujourd’hui en grande partie collectés parmi les
+                                        ordures ménagères et expédiés sur le continent pour y être incinérés : ils
+                                        participent au coût très élevé de la gestion des déchets payé par chacun des
+                                        contribuables. Nos déchets de jardins, non pris en charge par la commune, sont
+                                        fréquemment brûlés ou mal valorisés. Pourtant, toutes ces matières organiques
+                                        pourraient retourner à la terre pour la fertiliser.
+                                        Dans ce contexte, la Commission déchets est en charge de trouver les solutions
+                                        les plus adaptées et économiques pour la gestion des déchets. Afin de répondre
+                                        au mieux aux besoins des habitants, la commission a besoin de vous ! Nous vous
+                                        sollicitons pour mieux connaître vos pratiques, vos besoins et attentes en terme
+                                        de déchets organiques de cuisine et de jardin. Merci de consacrer quelques
+                                        minutes pour répondre au questionnaire, soit en version papier disponible chez
+                                        plusieurs commerçants et en mairie, soit en ligne en cliquant ici.</p>
+
+                                    <p>Merci de ne répondre qu’une seule fois par foyer. Vous avez jusqu’au 31 mai, mais
+                                        n’attendez-pas !</p>
+
+                                    <p>Lien à insérer : <a
+                                            href="https://forms.gle/K9CKb55sDVSpTNVR8">https://forms.gle/K9CKb55sDVSpTNVR8</a>
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-none d-lg-block h-100 py-5">
+                    <div class="card text-center">
+                        <a href="#articleProjetAlimentaire" data-bs-toggle="modal"><img
+                                src="images/projetAlimentaire.webp" class="card-img-top img-fluid"
+                                alt="Photo d'un radis"></a>
+                        <div class="card-body">
+                            <a href="#articleProjetAlimentaire" data-bs-toggle="modal">
+                                <h4 class="card-title">Projet Alimentaire Territorial de Bréhat</h5>
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                            <p class="card-text"><small>Publié il y a 1 jour</small></p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="articleProjetAlimentaire" tabindex="-1"
+                        aria-labelledby="articleProjetAlimentaireTitre" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title" id="articleProjetAlimentaireTitre">Projet Alimentaire
+                                        Territorial de Bréhat</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Fermer"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 class="fst-italic text-danger pb-3">Ouzh Taol ! (à table !)</h3>
+                                    <p>Venez découvrir le projet alimentaire territorial de l’Ile de Bréhat : samedi 5
+                                        août 2021 – salle polyvalente – 18h30 réunion publique</p>
+                                    <p>Pensez à réserver votre place à l’adresse suivante : pat@mairie-brehat.fr</p>
+                                    <img src="images/projetAlimentaire1.webp" class="img-fluid rounded mx-auto d-block"
+                                        alt="Photo du poster du projet alimentaire territorial">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Meteo-->
+    <div class="meteo bg-bleu-fonce text-white">
+        <div class="jumbotron jumbotron-fluid py-5">
+            <div class="container text-center">
+                <h1 class="display-4">METEO</h1>
+                <p class="lead">Consultez les prévisions météo pour la semaine en cliquant sur le fanion planté sur
+                    Bréhat.
+                </p>
+            </div>
+        </div>
+        <div class="map d-flex justify-content-center pb-5">
+            <iframe title="Carte Meteo" width="68%" height="450"
+                src="https://embed.windy.com/embed2.html?lat=48.860&lon=-2.983&detailLat=48.860&detailLon=-2.983&width=650&height=450&zoom=11&level=surface&overlay=temp&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1"
+                frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <!-- Images -->
+    <div id="activite" class="activite pb-3 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="jumbotron jumbotron-fluid py-3">
+                        <div class="container titre">
+                            <h1 class="display-4">ACTIVITES</h1>
+                            <p class="lead">Découvrez toutes les activités disponible sur l'île !
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-md-end align-items-center ">
+                    <a href="https://www.iledebrehat.fr/que-faire-a-brehat/" class="btn btn-info-plus" role="button">Voir toutes les activités</a>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="row d-flex justify-content-center align-items-center pb-4">
+                <div class="col-lg-6 pb-3">
+                    <div id="activiteCulturel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/exposition.webp" class="d-block w-100"
+                                    alt="Photo d'une exposition de l'association l’Art dans l’Île">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/concert.webp" class="d-block w-100"
+                                    alt="Photo d'un concert de Fert’île">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/bibliotheque.webp" class="d-block w-100"
+                                    alt="Photo de la bibliothèque dans le bâtiment de l’École du bas">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#activiteCulturel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Précédent</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#activiteCulturel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Prochain</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h1>Activités Culturelles</h1>
+                    <p>L'ile de Brehat vous propose de nombreuses activités culturelles grâce à des associations tel que
+                        "Coméd’île", une troupe de theatre amateur composée d’habitants de l’île de Bréhat
+                        qui a pour but de créer chaque année une pièce de théâtre et de se produire devant la population
+                        Bréhatine ou encore "l’Art dans l’île" qui a pour objectifs de favoriser la rencontre d’artistes
+                        et les faire connaître, d’encourager l’expression artistique par des expositions, d’avoir un rôle culturel en perpétuant
+                        le passé artistique de l’île, et en participant aux évènements culturels “tous publics” autour de moyens d’expressions
+                        artistiques variés.
+                    </p>
+                    <a href="https://www.iledebrehat.fr/que-faire-a-brehat/culture/" class="btn btn-decouvrir" role="button">Découvrir</a>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center pb-4">
+                <div class="col-lg-6 order-lg-2 pb-3">
+                    <div id="activiteSportive" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/tennis.webp" class="d-block w-100"
+                                    alt="Photos des terrains de tennis communaux">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/centreNautique.webp" class="d-block w-100"
+                                    alt="Photo des membres du centre nautique faisant de la voile">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/foot.webp" class="d-block w-100" alt="Photo du terrain multisports">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#activiteSportive"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Précédent</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#activiteSportive"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Prochain</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h1>Activités Sportives</h1>
+                    <p>L'ile de Brehat vous propose diverses activités sportives comme les deux terrains de tennis
+                        communaux qui sont accessibles gratuitement
+                        ou encore le centre nautique "Les Albatros" qui propose de nombreuses activités nautiques comme
+                        le kayak de mer, la plongée sous-marine et bien plus encore !
+
+                    </p>
+                    <a href="https://www.iledebrehat.fr/que-faire-a-brehat/activites-sportives/" class="btn btn-decouvrir" role="button">Découvrir</a>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center pb-4">
+                <div class="col-lg-6 pb-3">
+                    <div id="patrimoine" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/moulin.webp" class="d-block w-100" alt="Photo du moulin">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/tourBlanche.webp" class="d-block w-100" alt="Photo de la tour blanche">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/phare.webp" class="d-block w-100" alt="Photo du phare">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#patrimoine"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Précédent</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#patrimoine"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Prochain</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h1>Patrimoine</h1>
+                    <p>La promenade à Bréhat est un émerveillement tant elle recèle de surprises. Une légende de l’île
+                        nous dit que le Divin, au moment de la création du monde, jeta dans la mer un petit morceau de
+                        chacun des continents ; il en fut satisfait et commença à créer la terre… </br>
+                        Voilà comment serait né Bréhat ou « le seuil du paradis ». A chaque pas, par chaque chemin, les
+                        paysages vous saisissent par leurs beautés et vous invitent aux voyages.</p>
+                    <p> Voici un rapide survol du patrimoine bâti, que nous vous invitons à découvrir !
+                    </p>
+                    <a href="https://www.iledebrehat.fr/que-faire-a-brehat/le-patrimoine/" class="btn btn-decouvrir" role="button">Découvrir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white">
+
+        <div class="container text-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-lg-4 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        </i>Site officiel de la commune d’ïle-de-Bréhat
+                    </h6>
+                    <p>
+                        Toute l’information pratique sur l’administration de la commune, les démarches
+                        administratives,
+                        les services, la vie quotidienne insulaire, les loisirs et le tourisme.
+                    </p>
+                    <div>
+                        <a href="https://fr-fr.facebook.com/ile.de.brehat" class="me-4 text-reset">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCKjtJqq0QdIYhCIgUOmA36Q" class="me-4 text-reset">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.google.com/search?q=ile+de+brehat&rlz=1C1ONGR_frFR936FR936&ei=hk99YZH-B4ryav2VobgH&oq=ile+de+brehat&gs_lcp=Cgdnd3Mtd2l6EAMyCwguEIAEELEDEJMCMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIICAAQgAQQyQMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgYIABAWEB46CwguEIAEEMcBEK8BSgQIQRgAUNIZWKgcYOEdaAFwAngAgAFBiAG5AZIBATOYAQCgAQHIAQXAAQE&sclient=gws-wiz&ved=0ahUKEwiR2cG1pfLzAhUKuRoKHf1KCHcQ4dUDCA4&uact=5"
+                            class="me-4 text-reset">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ile_de_brehat/" class="me-4 text-reset">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-lg-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Municipalité
+                    </h6>
+                    <p>
+                        <a href="https://www.iledebrehat.fr/municipalite/la-mairie/" class="text-reset">Mairie</a>
+                    </p>
+                    <p>
+                        <a href="https://www.iledebrehat.fr/municipalite/lequipe-municipale/" class="text-reset">Equipe municipale</a>
+                    </p>
+                    <p>
+                        <a href="https://www.iledebrehat.fr/municipalite/tarifs-communaux/" class="text-reset">Tarif communaux</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-lg-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Liens utiles
+                    </h6>
+                    <p>
+                        <a href="https://www.iledebrehat.fr/les-transports/barges-de-transport/" class="text-reset">Barges de transport</a>
+                    </p>
+                    <p>
+                        <a href="https://www.iledebrehat.fr/les-transports/vedettes-de-transport-de-passagers/" class="text-reset">Horaires des vedettes</a>
+                    </p>
+                    <p>
+                        <a href="https://www.iledebrehat.fr/mentions-legales-et-protection-des-donnees/" class="text-reset">Mentions légales / RGPD</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-lg-4 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Contact
+                    </h6>
+                    <p><i class="fas fa-home me-3"></i> Crec’h Briand, 22870 Île-de-Bréhat</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        iledebrehat@mairie-brehat.fr
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 02 96 20 00 36</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright text-center p-4">
+            © 2021 Copyright : <a class="text-reset fw-bold" href="https://gitlab.com/i280/idb"> Groupe IDB</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    
+    <button type="button" class="btn btn-floating" id="boutton-haut">
+        <span class="material-icons">
+            arrow_drop_up
+        </span>
+    </button>
+
+</body>
+
+<!--Bootstrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+<!-- Iconnes -->
+<script src="https://kit.fontawesome.com/93e4a024f4.js" crossorigin="anonymous"></script>
+
+<!-- Scritp JS -->
+<script src="scripts.js"></script>
+
+</html>
