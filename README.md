@@ -14,6 +14,7 @@ Ce projet a été réalisé avec l'aide du framework [Bootstrap 5](https://getbo
 Le constat est simple : de nombreuses communes ou villages au patrimoine culturel ou touristique important ne disposent pas d’un site internet vitrine
 à la hauteur de leur potentiel.</br>
 4Zem identifie ces sites à fort potentiel et démarche ces communes en leur proposant une nouvelle version de leur site.</br>
+</br>
 4Zem vous confit deux missions :</br>
 * Mission 1 : Fournir un Minimum Viable Product de refonte du site
 * Mission 2 : Fournir des résultats statistiques du commerce local
