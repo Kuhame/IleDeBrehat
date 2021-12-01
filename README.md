@@ -1,4 +1,4 @@
-![Logo](./idb.svg)
+![Logo](./logo.svg)
 
 # Ile de Bréhat (Refonte du site de l'île de Bréhat)
 
