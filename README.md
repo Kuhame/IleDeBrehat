@@ -26,14 +26,6 @@ Le constat est simple : de nombreuses communes ou villages au patrimoine culture
 * BOOTSTRAP 5
 * JAVASCRIPT
 
-## Membre de l'équipe
-
-* BUVAL Anthony
-* CARDOS Calin
-* DEME Chérif
-* HAN Laurent
-* KUMARAKULASINGAM Athana
-
 ## Externe
 
 Lien du site original : https://www.iledebrehat.fr/
